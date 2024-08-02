@@ -26,93 +26,85 @@
 
         private void InitializeComponent()
         {
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.lblDescription = new System.Windows.Forms.Label();
-            this.numericUpDownDays = new System.Windows.Forms.NumericUpDown();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDays)).BeginInit();
-            this.SuspendLayout();
+            lblTitle = new Label();
+            lblDescription = new Label();
+            numericUpDownDays = new NumericUpDown();
+            btnSave = new Button();
+            btnCancel = new Button();
+            ((System.ComponentModel.ISupportInitialize)numericUpDownDays).BeginInit();
+            SuspendLayout();
             // 
             // lblTitle
             // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(12, 9);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(148, 32);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Settings";
+            lblTitle.AutoSize = true;
+            lblTitle.Font = new Font("Arial", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTitle.Location = new Point(10, 8);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(96, 26);
+            lblTitle.TabIndex = 0;
+            lblTitle.Text = "Settings";
             // 
             // lblDescription
             // 
-            this.lblDescription.AutoSize = true;
-            this.lblDescription.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescription.Location = new System.Drawing.Point(12, 50);
-            this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(208, 23);
-            this.lblDescription.TabIndex = 1;
-            this.lblDescription.Text = "Choose retention days:";
+            lblDescription.AutoSize = true;
+            lblDescription.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblDescription.Location = new Point(10, 47);
+            lblDescription.Name = "lblDescription";
+            lblDescription.Size = new Size(168, 18);
+            lblDescription.TabIndex = 1;
+            lblDescription.Text = "Choose retention days:";
             // 
             // numericUpDownDays
             // 
-            this.numericUpDownDays.Font = new System.Drawing.Font("Arial", 12F);
-            this.numericUpDownDays.Location = new System.Drawing.Point(16, 85);
-            this.numericUpDownDays.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDownDays.Name = "numericUpDownDays";
-            this.numericUpDownDays.Size = new System.Drawing.Size(120, 30);
-            this.numericUpDownDays.TabIndex = 2;
-            this.numericUpDownDays.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            numericUpDownDays.Font = new Font("Arial", 12F);
+            numericUpDownDays.Location = new Point(14, 80);
+            numericUpDownDays.Name = "numericUpDownDays";
+            numericUpDownDays.Size = new Size(105, 26);
+            numericUpDownDays.TabIndex = 2;
+            numericUpDownDays.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // btnSave
             // 
-            this.btnSave.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.btnSave.Location = new System.Drawing.Point(16, 130);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(120, 40);
-            this.btnSave.TabIndex = 3;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            btnSave.Font = new Font("Arial", 12F, FontStyle.Bold);
+            btnSave.Location = new Point(14, 122);
+            btnSave.Name = "btnSave";
+            btnSave.Size = new Size(105, 38);
+            btnSave.TabIndex = 3;
+            btnSave.Text = "Save";
+            btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
             // 
             // btnCancel
             // 
-            this.btnCancel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.btnCancel.Location = new System.Drawing.Point(160, 130);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(120, 40);
-            this.btnCancel.TabIndex = 4;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            btnCancel.Font = new Font("Arial", 12F, FontStyle.Bold);
+            btnCancel.Location = new Point(140, 122);
+            btnCancel.Name = "btnCancel";
+            btnCancel.Size = new Size(105, 38);
+            btnCancel.TabIndex = 4;
+            btnCancel.Text = "Cancel";
+            btnCancel.UseVisualStyleBackColor = true;
+            btnCancel.Click += btnCancel_Click;
             // 
             // Set
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(300, 200);
-            this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.numericUpDownDays);
-            this.Controls.Add(this.lblDescription);
-            this.Controls.Add(this.lblTitle);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Settings";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Set_FormClosing);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDays)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(262, 188);
+            Controls.Add(btnCancel);
+            Controls.Add(btnSave);
+            Controls.Add(numericUpDownDays);
+            Controls.Add(lblDescription);
+            Controls.Add(lblTitle);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "Set";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Settings";
+            FormClosing += Set_FormClosing;
+            ((System.ComponentModel.ISupportInitialize)numericUpDownDays).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

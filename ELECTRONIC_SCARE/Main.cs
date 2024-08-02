@@ -672,8 +672,8 @@ namespace ELECTRONIC_SCARE
                                 arduinoPortName = portName;
                                 arduinoConnected = true;
                                 SavePort("ArduinoPort", portName);
-                                MessageBox.Show($"Arduino connected on {portName}");
-                                toolStripStatusLabel2.Text = "Arduino: connected.";
+                               // MessageBox.Show($"Arduino connected on {portName}");
+                                toolStripStatusLabel2.Text = $"Arduino: connected on {portName}";
                                 toolStripStatusLabel2.ForeColor = Color.Green;
                             }
                             else
@@ -777,8 +777,8 @@ namespace ELECTRONIC_SCARE
                     {
                         SerialPortArduino.DataReceived += new SerialDataReceivedEventHandler(SerialPortArduinoDataReceivedHandler);
                         arduinoConnected = true;
-                      ///  MessageBox.Show($"Arduino connected on {arduinoPort}");
-                        toolStripStatusLabel2.Text = "Arduino: connected";
+                      //  MessageBox.Show($"Arduino connected on {arduinoPort}");
+                        toolStripStatusLabel2.Text = $"Arduino: connected on {arduinoPort}";
                         toolStripStatusLabel2.ForeColor = Color.Green;
                     }
                     else
@@ -789,7 +789,7 @@ namespace ELECTRONIC_SCARE
                 catch (Exception ex)
                 {
                  //   MessageBox.Show($"Error connecting to Arduino port '{arduinoPort}': {ex.Message}");
-                    toolStripStatusLabel2.Text = "Arduino: lost connection";
+                    toolStripStatusLabel2.Text = $"Arduino: lost connection on {arduinoPort}";
                     toolStripStatusLabel1.ForeColor = Color.Red;
                     SerialPortArduino.Close();
                 }
@@ -1033,7 +1033,7 @@ namespace ELECTRONIC_SCARE
                     //MessageBox.Show("Connection Failed");
                     toolStripStatusLabel1.ForeColor = Color.Red;
                     toolStripStatusLabel1.Text = "Scale: lost connection.";
-                    toolStripStatusLabel2.Text = "Arduino: lost connection";
+                    toolStripStatusLabel2.Text = "Arduino: lost connection on ";
                     toolStripStatusLabel1.ForeColor = Color.Red;
                     return;
                 }
