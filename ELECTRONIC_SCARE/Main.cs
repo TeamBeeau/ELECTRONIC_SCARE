@@ -232,6 +232,7 @@ namespace ELECTRONIC_SCARE
 
                     UpdateStatusColumn();
                     GetcpPO();
+                    stateScale = StateScale.Putting;
                     //SerialPortArduino.Write("Buzz");
                 }
             }
@@ -1518,10 +1519,7 @@ namespace ELECTRONIC_SCARE
                             IsStable = false;
                         break;
                     case StateScale.InsertData:
-                        qtyibString = tbQtyib.Text.Trim();
-                        PrintLabelAsync();
-                        EntryValue();
-                        stateScale = StateScale.Putting;
+                       
                         break;
                 }
               
@@ -1543,18 +1541,19 @@ namespace ELECTRONIC_SCARE
             switch (stateScale)
             {
                 case StateScale.Putting:
+                    try
+                    {
+                        if (SerialPortArduino.IsOpen)
+                            SerialPortArduino.Write(Fals);
+                    }
+                    catch (Exception)
+                    {
+                    }
                     if (numStable > 2)
                     {
                         numStable = 0; IsStable = false;
                         OK = false;
-                        try
-                        {
-                            if (SerialPortArduino.IsOpen)
-                                SerialPortArduino.Write(Fals);
-                        }
-                        catch (Exception)
-                        {
-                        }
+                       
                         stateScale = StateScale.CheckBlance;
                     }
                     break;
@@ -1579,6 +1578,10 @@ namespace ELECTRONIC_SCARE
                     if (numStable > 5)
                     {
                         numStable = 0; IsStable = false;
+                        qtyibString = tbQtyib.Text.Trim();
+                      await PrintLabelAsync();
+                        EntryValue();
+                        
                         stateScale = StateScale.InsertData;
                     }
                        
