@@ -233,7 +233,7 @@ namespace ELECTRONIC_SCARE
                     UpdateStatusColumn();
                     GetcpPO();
                     stateScale = StateScale.Putting;
-                    //SerialPortArduino.Write("Buzz");
+                    SerialPortArduino.Write("Buzz");
                 }
             }
         }
@@ -1541,6 +1541,7 @@ namespace ELECTRONIC_SCARE
             switch (stateScale)
             {
                 case StateScale.Putting:
+                    tmChecking.Interval = 200;
                     try
                     {
                         if (SerialPortArduino.IsOpen)
@@ -1572,17 +1573,20 @@ namespace ELECTRONIC_SCARE
                     }
                     catch (Exception ex)
                     {
+
                     }
                     break;
                 case StateScale.CheckZero:
                     if (numStable > 5)
                     {
+                        tmChecking.Interval = 1000;
+                        stateScale = StateScale.InsertData;
                         numStable = 0; IsStable = false;
                         qtyibString = tbQtyib.Text.Trim();
                       await PrintLabelAsync();
                         EntryValue();
                         
-                        stateScale = StateScale.InsertData;
+                       
                     }
                        
                     break;
