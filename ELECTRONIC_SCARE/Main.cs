@@ -1504,15 +1504,12 @@ namespace ELECTRONIC_SCARE
                             IsStable = false;                      
                         break;
                     case StateScale.CheckBlance:
-                        OK = false;
-                        try
-                        {
-                            if (SerialPortArduino.IsOpen)
-                                SerialPortArduino.Write(Fals);
-                        }
-                        catch (Exception)
-                        {
-                        }
+                      
+                        if (qty ==qtyib)
+                            IsStable = true;
+                        else
+                            IsStable = false;
+                      
                         break;
                     case StateScale.CheckZero:
                         if (qty == 0)
@@ -1550,7 +1547,15 @@ namespace ELECTRONIC_SCARE
                     if (numStable > 2)
                     {
                         numStable = 0; IsStable = false;
-                            ;
+                        OK = false;
+                        try
+                        {
+                            if (SerialPortArduino.IsOpen)
+                                SerialPortArduino.Write(Fals);
+                        }
+                        catch (Exception)
+                        {
+                        }
                         stateScale = StateScale.CheckBlance;
                     }
                     break;
