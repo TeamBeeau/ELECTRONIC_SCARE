@@ -1547,13 +1547,21 @@ namespace ELECTRONIC_SCARE
             switch (stateScale)
             {
                 case StateScale.Putting:
-                    if(numStable>2)
-                        stateScale=StateScale.CheckBlance;
+                    if (numStable > 2)
+                    {
+                        numStable = 0; IsStable = false;
+                            ;
+                        stateScale = StateScale.CheckBlance;
+                    }
                     break;
                 case StateScale.CheckBlance:
                     OK = true;
                     if (numStable > 2)
+                    {
+                        numStable = 0; IsStable = false;
                         stateScale = StateScale.CheckZero;
+                    }
+                       
                     try
                     {
                         if (SerialPortArduino.IsOpen)
@@ -1565,7 +1573,11 @@ namespace ELECTRONIC_SCARE
                     break;
                 case StateScale.CheckZero:
                     if (numStable > 5)
+                    {
+                        numStable = 0; IsStable = false;
                         stateScale = StateScale.InsertData;
+                    }
+                       
                     break;
             }
 
