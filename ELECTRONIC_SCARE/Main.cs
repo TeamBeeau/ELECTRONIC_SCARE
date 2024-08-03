@@ -1518,9 +1518,8 @@ namespace ELECTRONIC_SCARE
                             IsStable = false;
                         break;
                     case StateScale.InsertData:
-                        
                         qtyibString = tbQtyib.Text.Trim();
-                        await PrintLabelAsync();
+                        PrintLabelAsync();
                         EntryValue();
                         stateScale = StateScale.Putting;
                         break;

@@ -131,10 +131,10 @@ namespace ELECTRONIC_SCARE
             panel12.BackColor = Color.Transparent;
             panel12.Controls.Add(statusStrip1);
             panel12.Dock = DockStyle.Bottom;
-            panel12.Location = new Point(0, 787);
-            panel12.Margin = new Padding(2, 1, 2, 1);
+            panel12.Location = new Point(0, 1679);
+            panel12.Margin = new Padding(4, 2, 4, 2);
             panel12.Name = "panel12";
-            panel12.Size = new Size(1744, 20);
+            panel12.Size = new Size(2884, 43);
             panel12.TabIndex = 17;
             // 
             // statusStrip1
@@ -145,8 +145,8 @@ namespace ELECTRONIC_SCARE
             statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1, toolStripStatusLabel2, toolStripStatusLabel3, toolStripStatusLabel4, toolStripStatusLabel5 });
             statusStrip1.Location = new Point(0, 0);
             statusStrip1.Name = "statusStrip1";
-            statusStrip1.Padding = new Padding(1, 0, 8, 0);
-            statusStrip1.Size = new Size(1744, 20);
+            statusStrip1.Padding = new Padding(2, 0, 15, 0);
+            statusStrip1.Size = new Size(2884, 43);
             statusStrip1.TabIndex = 0;
             statusStrip1.Text = "statusStrip1";
             // 
@@ -155,7 +155,7 @@ namespace ELECTRONIC_SCARE
             toolStripStatusLabel1.Font = new Font("Segoe UI", 9F);
             toolStripStatusLabel1.ForeColor = Color.Red;
             toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            toolStripStatusLabel1.Size = new Size(411, 15);
+            toolStripStatusLabel1.Size = new Size(673, 33);
             toolStripStatusLabel1.Spring = true;
             toolStripStatusLabel1.Text = "Scale: lost connection.";
             toolStripStatusLabel1.TextAlign = ContentAlignment.MiddleLeft;
@@ -165,7 +165,7 @@ namespace ELECTRONIC_SCARE
             toolStripStatusLabel2.Font = new Font("Segoe UI", 9F);
             toolStripStatusLabel2.ForeColor = Color.Red;
             toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            toolStripStatusLabel2.Size = new Size(411, 15);
+            toolStripStatusLabel2.Size = new Size(673, 33);
             toolStripStatusLabel2.Spring = true;
             toolStripStatusLabel2.Text = "Arduino: lost connection.";
             toolStripStatusLabel2.TextAlign = ContentAlignment.MiddleLeft;
@@ -175,7 +175,7 @@ namespace ELECTRONIC_SCARE
             toolStripStatusLabel3.Font = new Font("Segoe UI", 9F);
             toolStripStatusLabel3.ForeColor = Color.Red;
             toolStripStatusLabel3.Name = "toolStripStatusLabel3";
-            toolStripStatusLabel3.Size = new Size(411, 15);
+            toolStripStatusLabel3.Size = new Size(673, 33);
             toolStripStatusLabel3.Spring = true;
             toolStripStatusLabel3.Text = "Printer: lost connection.";
             toolStripStatusLabel3.TextAlign = ContentAlignment.MiddleLeft;
@@ -184,7 +184,7 @@ namespace ELECTRONIC_SCARE
             // 
             toolStripStatusLabel4.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
             toolStripStatusLabel4.Name = "toolStripStatusLabel4";
-            toolStripStatusLabel4.Size = new Size(411, 15);
+            toolStripStatusLabel4.Size = new Size(673, 33);
             toolStripStatusLabel4.Spring = true;
             toolStripStatusLabel4.Text = "Bee Eyes Automation";
             toolStripStatusLabel4.TextAlign = ContentAlignment.MiddleLeft;
@@ -193,7 +193,7 @@ namespace ELECTRONIC_SCARE
             // 
             toolStripStatusLabel5.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
             toolStripStatusLabel5.Name = "toolStripStatusLabel5";
-            toolStripStatusLabel5.Size = new Size(91, 15);
+            toolStripStatusLabel5.Size = new Size(174, 33);
             toolStripStatusLabel5.Text = "Version: 1.0.0";
             // 
             // panel18
@@ -203,9 +203,9 @@ namespace ELECTRONIC_SCARE
             panel18.Controls.Add(pictureBox1);
             panel18.Dock = DockStyle.Left;
             panel18.Location = new Point(0, 0);
-            panel18.Margin = new Padding(2, 1, 2, 1);
+            panel18.Margin = new Padding(4, 2, 4, 2);
             panel18.Name = "panel18";
-            panel18.Size = new Size(516, 787);
+            panel18.Size = new Size(958, 1679);
             panel18.TabIndex = 20;
             // 
             // panel5
@@ -215,11 +215,11 @@ namespace ELECTRONIC_SCARE
             panel5.Controls.Add(tbQuan);
             panel5.Controls.Add(label7);
             panel5.Dock = DockStyle.Fill;
-            panel5.Location = new Point(0, 246);
-            panel5.Margin = new Padding(2, 1, 2, 1);
+            panel5.Location = new Point(0, 525);
+            panel5.Margin = new Padding(4, 2, 4, 2);
             panel5.Name = "panel5";
-            panel5.Padding = new Padding(10);
-            panel5.Size = new Size(516, 541);
+            panel5.Padding = new Padding(19, 21, 19, 21);
+            panel5.Size = new Size(958, 1154);
             panel5.TabIndex = 9;
             // 
             // lbStatus
@@ -228,10 +228,10 @@ namespace ELECTRONIC_SCARE
             lbStatus.BorderStyle = BorderStyle.Fixed3D;
             lbStatus.Dock = DockStyle.Fill;
             lbStatus.Font = new Font("Yu Gothic", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbStatus.Location = new Point(10, 422);
-            lbStatus.Margin = new Padding(2, 0, 2, 0);
+            lbStatus.Location = new Point(19, 899);
+            lbStatus.Margin = new Padding(4, 0, 4, 0);
             lbStatus.Name = "lbStatus";
-            lbStatus.Size = new Size(496, 109);
+            lbStatus.Size = new Size(920, 234);
             lbStatus.TabIndex = 6;
             lbStatus.Text = "WAIT";
             lbStatus.TextAlign = ContentAlignment.MiddleCenter;
@@ -240,10 +240,10 @@ namespace ELECTRONIC_SCARE
             // 
             label9.Dock = DockStyle.Top;
             label9.Font = new Font("Times New Roman", 36F);
-            label9.Location = new Point(10, 344);
-            label9.Margin = new Padding(2, 0, 2, 0);
+            label9.Location = new Point(19, 733);
+            label9.Margin = new Padding(4, 0, 4, 0);
             label9.Name = "label9";
-            label9.Size = new Size(496, 78);
+            label9.Size = new Size(920, 166);
             label9.TabIndex = 5;
             label9.Text = "Status";
             label9.TextAlign = ContentAlignment.BottomCenter;
@@ -254,10 +254,10 @@ namespace ELECTRONIC_SCARE
             tbQuan.BorderStyle = BorderStyle.Fixed3D;
             tbQuan.Dock = DockStyle.Top;
             tbQuan.Font = new Font("Yu Gothic UI", 99.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            tbQuan.Location = new Point(10, 108);
-            tbQuan.Margin = new Padding(2, 0, 2, 0);
+            tbQuan.Location = new Point(19, 230);
+            tbQuan.Margin = new Padding(4, 0, 4, 0);
             tbQuan.Name = "tbQuan";
-            tbQuan.Size = new Size(496, 236);
+            tbQuan.Size = new Size(920, 503);
             tbQuan.TabIndex = 4;
             tbQuan.Text = "00000";
             tbQuan.TextAlign = ContentAlignment.MiddleCenter;
@@ -266,10 +266,10 @@ namespace ELECTRONIC_SCARE
             // 
             label7.Dock = DockStyle.Top;
             label7.Font = new Font("Times New Roman", 36F);
-            label7.Location = new Point(10, 10);
-            label7.Margin = new Padding(2, 0, 2, 0);
+            label7.Location = new Point(19, 21);
+            label7.Margin = new Padding(4, 0, 4, 0);
             label7.Name = "label7";
-            label7.Size = new Size(496, 98);
+            label7.Size = new Size(920, 209);
             label7.TabIndex = 0;
             label7.Text = "Quantity";
             label7.TextAlign = ContentAlignment.MiddleCenter;
@@ -280,9 +280,9 @@ namespace ELECTRONIC_SCARE
             pictureBox1.Dock = DockStyle.Top;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Margin = new Padding(2, 1, 2, 1);
+            pictureBox1.Margin = new Padding(4, 2, 4, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(516, 246);
+            pictureBox1.Size = new Size(958, 525);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 8;
             pictureBox1.TabStop = false;
@@ -295,10 +295,10 @@ namespace ELECTRONIC_SCARE
             panel1.Controls.Add(panel7);
             panel1.Controls.Add(panel6);
             panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(516, 0);
-            panel1.Margin = new Padding(2, 1, 2, 1);
+            panel1.Location = new Point(958, 0);
+            panel1.Margin = new Padding(4, 2, 4, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1228, 113);
+            panel1.Size = new Size(1926, 241);
             panel1.TabIndex = 21;
             // 
             // panel9
@@ -308,20 +308,20 @@ namespace ELECTRONIC_SCARE
             panel9.Controls.Add(label1);
             panel9.Dock = DockStyle.Fill;
             panel9.Location = new Point(0, 0);
-            panel9.Margin = new Padding(2, 1, 2, 1);
+            panel9.Margin = new Padding(4, 2, 4, 2);
             panel9.Name = "panel9";
-            panel9.Size = new Size(523, 113);
+            panel9.Size = new Size(618, 241);
             panel9.TabIndex = 13;
             // 
             // panel38
             // 
             panel38.Controls.Add(tbPO);
             panel38.Dock = DockStyle.Fill;
-            panel38.Location = new Point(0, 31);
-            panel38.Margin = new Padding(2, 1, 2, 1);
+            panel38.Location = new Point(0, 66);
+            panel38.Margin = new Padding(4, 2, 4, 2);
             panel38.Name = "panel38";
-            panel38.Padding = new Padding(5);
-            panel38.Size = new Size(523, 82);
+            panel38.Padding = new Padding(9, 11, 9, 11);
+            panel38.Size = new Size(618, 175);
             panel38.TabIndex = 5;
             // 
             // tbPO
@@ -329,10 +329,10 @@ namespace ELECTRONIC_SCARE
             tbPO.BackColor = SystemColors.Info;
             tbPO.Dock = DockStyle.Fill;
             tbPO.Font = new Font("Times New Roman", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tbPO.Location = new Point(5, 5);
-            tbPO.Margin = new Padding(2, 1, 2, 1);
+            tbPO.Location = new Point(9, 11);
+            tbPO.Margin = new Padding(4, 2, 4, 2);
             tbPO.Name = "tbPO";
-            tbPO.Size = new Size(513, 63);
+            tbPO.Size = new Size(600, 118);
             tbPO.TabIndex = 0;
             tbPO.Text = "W20240626015-0160";
             tbPO.TextAlign = HorizontalAlignment.Center;
@@ -345,9 +345,9 @@ namespace ELECTRONIC_SCARE
             label1.Dock = DockStyle.Top;
             label1.Font = new Font("Times New Roman", 16.125F);
             label1.Location = new Point(0, 0);
-            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(523, 31);
+            label1.Size = new Size(618, 66);
             label1.TabIndex = 4;
             label1.Text = "PO";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -357,10 +357,10 @@ namespace ELECTRONIC_SCARE
             panel8.Controls.Add(tbQtyib);
             panel8.Controls.Add(label2);
             panel8.Dock = DockStyle.Right;
-            panel8.Location = new Point(523, 0);
-            panel8.Margin = new Padding(2, 1, 2, 1);
+            panel8.Location = new Point(618, 0);
+            panel8.Margin = new Padding(4, 2, 4, 2);
             panel8.Name = "panel8";
-            panel8.Size = new Size(235, 113);
+            panel8.Size = new Size(436, 241);
             panel8.TabIndex = 12;
             // 
             // tbQtyib
@@ -368,10 +368,10 @@ namespace ELECTRONIC_SCARE
             tbQtyib.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             tbQtyib.BackColor = SystemColors.Info;
             tbQtyib.Font = new Font("Times New Roman", 36F);
-            tbQtyib.Location = new Point(12, 36);
-            tbQtyib.Margin = new Padding(2, 1, 2, 1);
+            tbQtyib.Location = new Point(22, 77);
+            tbQtyib.Margin = new Padding(4, 2, 4, 2);
             tbQtyib.Name = "tbQtyib";
-            tbQtyib.Size = new Size(205, 63);
+            tbQtyib.Size = new Size(377, 118);
             tbQtyib.TabIndex = 1;
             tbQtyib.Text = "30";
             tbQtyib.TextAlign = HorizontalAlignment.Center;
@@ -384,9 +384,9 @@ namespace ELECTRONIC_SCARE
             label2.Dock = DockStyle.Top;
             label2.Font = new Font("Times New Roman", 16.125F);
             label2.Location = new Point(0, 0);
-            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(235, 31);
+            label2.Size = new Size(436, 66);
             label2.TabIndex = 5;
             label2.Text = "Q'TY in Box";
             label2.TextAlign = ContentAlignment.MiddleCenter;
@@ -396,10 +396,10 @@ namespace ELECTRONIC_SCARE
             panel7.Controls.Add(label3);
             panel7.Controls.Add(tbQty);
             panel7.Dock = DockStyle.Right;
-            panel7.Location = new Point(758, 0);
-            panel7.Margin = new Padding(2, 1, 2, 1);
+            panel7.Location = new Point(1054, 0);
+            panel7.Margin = new Padding(4, 2, 4, 2);
             panel7.Name = "panel7";
-            panel7.Size = new Size(235, 113);
+            panel7.Size = new Size(436, 241);
             panel7.TabIndex = 11;
             // 
             // label3
@@ -407,9 +407,9 @@ namespace ELECTRONIC_SCARE
             label3.Dock = DockStyle.Top;
             label3.Font = new Font("Times New Roman", 16.125F);
             label3.Location = new Point(0, 0);
-            label3.Margin = new Padding(2, 0, 2, 0);
+            label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(235, 31);
+            label3.Size = new Size(436, 66);
             label3.TabIndex = 6;
             label3.Text = "Q'TY";
             label3.TextAlign = ContentAlignment.MiddleCenter;
@@ -421,11 +421,11 @@ namespace ELECTRONIC_SCARE
             tbQty.BorderStyle = BorderStyle.FixedSingle;
             tbQty.Font = new Font("Times New Roman", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             tbQty.ForeColor = Color.White;
-            tbQty.Location = new Point(15, 36);
-            tbQty.Margin = new Padding(2, 1, 2, 1);
+            tbQty.Location = new Point(28, 77);
+            tbQty.Margin = new Padding(4, 2, 4, 2);
             tbQty.Name = "tbQty";
             tbQty.ReadOnly = true;
-            tbQty.Size = new Size(213, 63);
+            tbQty.Size = new Size(394, 118);
             tbQty.TabIndex = 3;
             tbQty.Text = "00";
             tbQty.TextAlign = HorizontalAlignment.Center;
@@ -436,10 +436,10 @@ namespace ELECTRONIC_SCARE
             panel6.Controls.Add(tbBox);
             panel6.Controls.Add(label4);
             panel6.Dock = DockStyle.Right;
-            panel6.Location = new Point(993, 0);
-            panel6.Margin = new Padding(2, 1, 2, 1);
+            panel6.Location = new Point(1490, 0);
+            panel6.Margin = new Padding(4, 2, 4, 2);
             panel6.Name = "panel6";
-            panel6.Size = new Size(235, 113);
+            panel6.Size = new Size(436, 241);
             panel6.TabIndex = 10;
             // 
             // tbBox
@@ -449,11 +449,11 @@ namespace ELECTRONIC_SCARE
             tbBox.BorderStyle = BorderStyle.FixedSingle;
             tbBox.Font = new Font("Times New Roman", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             tbBox.ForeColor = Color.White;
-            tbBox.Location = new Point(14, 36);
-            tbBox.Margin = new Padding(2, 1, 2, 1);
+            tbBox.Location = new Point(26, 77);
+            tbBox.Margin = new Padding(4, 2, 4, 2);
             tbBox.Name = "tbBox";
             tbBox.ReadOnly = true;
-            tbBox.Size = new Size(210, 63);
+            tbBox.Size = new Size(388, 118);
             tbBox.TabIndex = 2;
             tbBox.Text = "00";
             tbBox.TextAlign = HorizontalAlignment.Center;
@@ -463,9 +463,9 @@ namespace ELECTRONIC_SCARE
             label4.Dock = DockStyle.Top;
             label4.Font = new Font("Times New Roman", 16.125F);
             label4.Location = new Point(0, 0);
-            label4.Margin = new Padding(2, 0, 2, 0);
+            label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(235, 31);
+            label4.Size = new Size(436, 66);
             label4.TabIndex = 7;
             label4.Text = "Box";
             label4.TextAlign = ContentAlignment.MiddleCenter;
@@ -475,20 +475,20 @@ namespace ELECTRONIC_SCARE
             panel3.Controls.Add(panel13);
             panel3.Controls.Add(panel4);
             panel3.Dock = DockStyle.Fill;
-            panel3.Location = new Point(516, 113);
-            panel3.Margin = new Padding(2, 1, 2, 1);
+            panel3.Location = new Point(958, 241);
+            panel3.Margin = new Padding(4, 2, 4, 2);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1228, 674);
+            panel3.Size = new Size(1926, 1438);
             panel3.TabIndex = 22;
             // 
             // panel13
             // 
             panel13.Controls.Add(dgvMain);
             panel13.Dock = DockStyle.Fill;
-            panel13.Location = new Point(0, 144);
-            panel13.Margin = new Padding(2, 1, 2, 1);
+            panel13.Location = new Point(0, 307);
+            panel13.Margin = new Padding(4, 2, 4, 2);
             panel13.Name = "panel13";
-            panel13.Size = new Size(1228, 530);
+            panel13.Size = new Size(1926, 1131);
             panel13.TabIndex = 18;
             // 
             // dgvMain
@@ -498,13 +498,13 @@ namespace ELECTRONIC_SCARE
             dgvMain.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvMain.Dock = DockStyle.Fill;
             dgvMain.Location = new Point(0, 0);
-            dgvMain.Margin = new Padding(2, 1, 2, 1);
+            dgvMain.Margin = new Padding(4, 2, 4, 2);
             dgvMain.MultiSelect = false;
             dgvMain.Name = "dgvMain";
             dgvMain.ReadOnly = true;
             dgvMain.RowHeadersVisible = false;
             dgvMain.RowHeadersWidth = 100;
-            dgvMain.Size = new Size(1228, 530);
+            dgvMain.Size = new Size(1926, 1131);
             dgvMain.TabIndex = 16;
             dgvMain.CellFormatting += dgvMain_CellFormatting;
             // 
@@ -514,9 +514,9 @@ namespace ELECTRONIC_SCARE
             panel4.Controls.Add(panel2);
             panel4.Dock = DockStyle.Top;
             panel4.Location = new Point(0, 0);
-            panel4.Margin = new Padding(2, 1, 2, 1);
+            panel4.Margin = new Padding(4, 2, 4, 2);
             panel4.Name = "panel4";
-            panel4.Size = new Size(1228, 144);
+            panel4.Size = new Size(1926, 307);
             panel4.TabIndex = 1;
             // 
             // panel2
@@ -526,10 +526,10 @@ namespace ELECTRONIC_SCARE
             panel2.Controls.Add(panel23);
             panel2.Dock = DockStyle.Fill;
             panel2.Location = new Point(0, 0);
-            panel2.Margin = new Padding(2, 1, 2, 1);
+            panel2.Margin = new Padding(4, 2, 4, 2);
             panel2.Name = "panel2";
-            panel2.Padding = new Padding(5);
-            panel2.Size = new Size(1228, 144);
+            panel2.Padding = new Padding(9, 11, 9, 11);
+            panel2.Size = new Size(1926, 307);
             panel2.TabIndex = 17;
             // 
             // btnRun
@@ -539,10 +539,10 @@ namespace ELECTRONIC_SCARE
             btnRun.FlatStyle = FlatStyle.Popup;
             btnRun.Font = new Font("Times New Roman", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnRun.ForeColor = Color.White;
-            btnRun.Location = new Point(5, 5);
-            btnRun.Margin = new Padding(2, 1, 2, 1);
+            btnRun.Location = new Point(9, 11);
+            btnRun.Margin = new Padding(4, 2, 4, 2);
             btnRun.Name = "btnRun";
-            btnRun.Size = new Size(354, 134);
+            btnRun.Size = new Size(305, 285);
             btnRun.TabIndex = 31;
             btnRun.Text = "RUN";
             btnRun.UseVisualStyleBackColor = false;
@@ -554,9 +554,10 @@ namespace ELECTRONIC_SCARE
             panel23.Controls.Add(panel32);
             panel23.Controls.Add(panel11);
             panel23.Dock = DockStyle.Right;
-            panel23.Location = new Point(359, 5);
+            panel23.Location = new Point(314, 11);
+            panel23.Margin = new Padding(6);
             panel23.Name = "panel23";
-            panel23.Size = new Size(864, 134);
+            panel23.Size = new Size(1603, 285);
             panel23.TabIndex = 29;
             // 
             // panel32
@@ -569,19 +570,21 @@ namespace ELECTRONIC_SCARE
             panel32.Controls.Add(panel17);
             panel32.Controls.Add(panel16);
             panel32.Dock = DockStyle.Fill;
-            panel32.Location = new Point(0, 67);
+            panel32.Location = new Point(0, 143);
+            panel32.Margin = new Padding(6);
             panel32.Name = "panel32";
-            panel32.Size = new Size(862, 65);
+            panel32.Size = new Size(1601, 140);
             panel32.TabIndex = 27;
             // 
             // panel22
             // 
             panel22.Controls.Add(btnSetting);
             panel22.Dock = DockStyle.Right;
-            panel22.Location = new Point(-3, 0);
+            panel22.Location = new Point(-6, 0);
+            panel22.Margin = new Padding(6);
             panel22.Name = "panel22";
-            panel22.Padding = new Padding(8);
-            panel22.Size = new Size(136, 65);
+            panel22.Padding = new Padding(15, 17, 15, 17);
+            panel22.Size = new Size(253, 140);
             panel22.TabIndex = 27;
             // 
             // btnSetting
@@ -592,10 +595,10 @@ namespace ELECTRONIC_SCARE
             btnSetting.FlatStyle = FlatStyle.Popup;
             btnSetting.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold);
             btnSetting.ForeColor = Color.Goldenrod;
-            btnSetting.Location = new Point(8, 8);
-            btnSetting.Margin = new Padding(2, 1, 2, 1);
+            btnSetting.Location = new Point(15, 17);
+            btnSetting.Margin = new Padding(4, 2, 4, 2);
             btnSetting.Name = "btnSetting";
-            btnSetting.Size = new Size(120, 49);
+            btnSetting.Size = new Size(223, 106);
             btnSetting.TabIndex = 12;
             btnSetting.Text = "SETTING";
             btnSetting.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -606,11 +609,11 @@ namespace ELECTRONIC_SCARE
             // 
             panel14.Controls.Add(btnReprint);
             panel14.Dock = DockStyle.Right;
-            panel14.Location = new Point(133, 0);
-            panel14.Margin = new Padding(2, 1, 2, 1);
+            panel14.Location = new Point(247, 0);
+            panel14.Margin = new Padding(4, 2, 4, 2);
             panel14.Name = "panel14";
-            panel14.Padding = new Padding(8);
-            panel14.Size = new Size(140, 65);
+            panel14.Padding = new Padding(15, 17, 15, 17);
+            panel14.Size = new Size(260, 140);
             panel14.TabIndex = 22;
             // 
             // btnReprint
@@ -620,10 +623,10 @@ namespace ELECTRONIC_SCARE
             btnReprint.FlatStyle = FlatStyle.Popup;
             btnReprint.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold);
             btnReprint.ForeColor = Color.Black;
-            btnReprint.Location = new Point(8, 8);
-            btnReprint.Margin = new Padding(5);
+            btnReprint.Location = new Point(15, 17);
+            btnReprint.Margin = new Padding(9, 11, 9, 11);
             btnReprint.Name = "btnReprint";
-            btnReprint.Size = new Size(124, 49);
+            btnReprint.Size = new Size(230, 106);
             btnReprint.TabIndex = 16;
             btnReprint.Text = "REPRINT";
             btnReprint.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -634,11 +637,11 @@ namespace ELECTRONIC_SCARE
             // 
             panel25.Controls.Add(btnDelete);
             panel25.Dock = DockStyle.Right;
-            panel25.Location = new Point(273, 0);
-            panel25.Margin = new Padding(2, 1, 2, 1);
+            panel25.Location = new Point(507, 0);
+            panel25.Margin = new Padding(4, 2, 4, 2);
             panel25.Name = "panel25";
-            panel25.Padding = new Padding(8);
-            panel25.Size = new Size(140, 65);
+            panel25.Padding = new Padding(15, 17, 15, 17);
+            panel25.Size = new Size(260, 140);
             panel25.TabIndex = 26;
             // 
             // btnDelete
@@ -649,11 +652,11 @@ namespace ELECTRONIC_SCARE
             btnDelete.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold);
             btnDelete.ForeColor = Color.Red;
             btnDelete.ImageAlign = ContentAlignment.MiddleLeft;
-            btnDelete.Location = new Point(8, 8);
-            btnDelete.Margin = new Padding(2, 1, 2, 1);
+            btnDelete.Location = new Point(15, 17);
+            btnDelete.Margin = new Padding(4, 2, 4, 2);
             btnDelete.Name = "btnDelete";
             btnDelete.RightToLeft = RightToLeft.Yes;
-            btnDelete.Size = new Size(124, 49);
+            btnDelete.Size = new Size(230, 106);
             btnDelete.TabIndex = 20;
             btnDelete.Text = "DELETE";
             btnDelete.TextImageRelation = TextImageRelation.TextBeforeImage;
@@ -664,11 +667,11 @@ namespace ELECTRONIC_SCARE
             // 
             panel15.Controls.Add(btnConnect);
             panel15.Dock = DockStyle.Right;
-            panel15.Location = new Point(413, 0);
-            panel15.Margin = new Padding(2, 1, 2, 1);
+            panel15.Location = new Point(767, 0);
+            panel15.Margin = new Padding(4, 2, 4, 2);
             panel15.Name = "panel15";
-            panel15.Padding = new Padding(8);
-            panel15.Size = new Size(140, 65);
+            panel15.Padding = new Padding(15, 17, 15, 17);
+            panel15.Size = new Size(260, 140);
             panel15.TabIndex = 23;
             // 
             // btnConnect
@@ -678,10 +681,10 @@ namespace ELECTRONIC_SCARE
             btnConnect.FlatStyle = FlatStyle.Popup;
             btnConnect.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold);
             btnConnect.ForeColor = Color.Black;
-            btnConnect.Location = new Point(8, 8);
-            btnConnect.Margin = new Padding(2, 1, 2, 1);
+            btnConnect.Location = new Point(15, 17);
+            btnConnect.Margin = new Padding(4, 2, 4, 2);
             btnConnect.Name = "btnConnect";
-            btnConnect.Size = new Size(124, 49);
+            btnConnect.Size = new Size(230, 106);
             btnConnect.TabIndex = 17;
             btnConnect.Text = "CONNECT";
             btnConnect.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -692,11 +695,11 @@ namespace ELECTRONIC_SCARE
             // 
             panel17.Controls.Add(btnPrint);
             panel17.Dock = DockStyle.Right;
-            panel17.Location = new Point(553, 0);
-            panel17.Margin = new Padding(2, 1, 2, 1);
+            panel17.Location = new Point(1027, 0);
+            panel17.Margin = new Padding(4, 2, 4, 2);
             panel17.Name = "panel17";
-            panel17.Padding = new Padding(8);
-            panel17.Size = new Size(140, 65);
+            panel17.Padding = new Padding(15, 17, 15, 17);
+            panel17.Size = new Size(260, 140);
             panel17.TabIndex = 25;
             // 
             // btnPrint
@@ -706,10 +709,10 @@ namespace ELECTRONIC_SCARE
             btnPrint.FlatStyle = FlatStyle.Popup;
             btnPrint.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold);
             btnPrint.ForeColor = Color.Black;
-            btnPrint.Location = new Point(8, 8);
-            btnPrint.Margin = new Padding(2, 1, 2, 1);
+            btnPrint.Location = new Point(15, 17);
+            btnPrint.Margin = new Padding(4, 2, 4, 2);
             btnPrint.Name = "btnPrint";
-            btnPrint.Size = new Size(124, 49);
+            btnPrint.Size = new Size(230, 106);
             btnPrint.TabIndex = 19;
             btnPrint.Text = "PRINT";
             btnPrint.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -720,11 +723,11 @@ namespace ELECTRONIC_SCARE
             // 
             panel16.Controls.Add(btnExport);
             panel16.Dock = DockStyle.Right;
-            panel16.Location = new Point(693, 0);
-            panel16.Margin = new Padding(5);
+            panel16.Location = new Point(1287, 0);
+            panel16.Margin = new Padding(9, 11, 9, 11);
             panel16.Name = "panel16";
-            panel16.Padding = new Padding(8);
-            panel16.Size = new Size(169, 65);
+            panel16.Padding = new Padding(15, 17, 15, 17);
+            panel16.Size = new Size(314, 140);
             panel16.TabIndex = 24;
             // 
             // btnExport
@@ -734,10 +737,10 @@ namespace ELECTRONIC_SCARE
             btnExport.FlatStyle = FlatStyle.Popup;
             btnExport.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold);
             btnExport.ForeColor = Color.Black;
-            btnExport.Location = new Point(8, 8);
-            btnExport.Margin = new Padding(2, 1, 2, 1);
+            btnExport.Location = new Point(15, 17);
+            btnExport.Margin = new Padding(4, 2, 4, 2);
             btnExport.Name = "btnExport";
-            btnExport.Size = new Size(153, 49);
+            btnExport.Size = new Size(284, 106);
             btnExport.TabIndex = 18;
             btnExport.Text = "EXPORT";
             btnExport.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -753,9 +756,9 @@ namespace ELECTRONIC_SCARE
             panel11.Controls.Add(panel10);
             panel11.Dock = DockStyle.Top;
             panel11.Location = new Point(0, 0);
-            panel11.Margin = new Padding(2, 1, 2, 1);
+            panel11.Margin = new Padding(4, 2, 4, 2);
             panel11.Name = "panel11";
-            panel11.Size = new Size(862, 67);
+            panel11.Size = new Size(1601, 143);
             panel11.TabIndex = 21;
             // 
             // panel21
@@ -763,19 +766,20 @@ namespace ELECTRONIC_SCARE
             panel21.Controls.Add(label5);
             panel21.Controls.Add(tpFrom);
             panel21.Dock = DockStyle.Right;
-            panel21.Location = new Point(1, 0);
+            panel21.Location = new Point(2, 0);
+            panel21.Margin = new Padding(6);
             panel21.Name = "panel21";
-            panel21.Size = new Size(172, 67);
+            panel21.Size = new Size(319, 143);
             panel21.TabIndex = 12;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Times New Roman", 13.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(47, 6);
-            label5.Margin = new Padding(2, 0, 2, 0);
+            label5.Location = new Point(87, 13);
+            label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
-            label5.Size = new Size(60, 22);
+            label5.Size = new Size(112, 42);
             label5.TabIndex = 11;
             label5.Text = "From ";
             // 
@@ -783,10 +787,10 @@ namespace ELECTRONIC_SCARE
             // 
             tpFrom.Font = new Font("Times New Roman", 16.125F);
             tpFrom.Format = DateTimePickerFormat.Short;
-            tpFrom.Location = new Point(6, 29);
-            tpFrom.Margin = new Padding(2, 1, 2, 1);
+            tpFrom.Location = new Point(11, 62);
+            tpFrom.Margin = new Padding(4, 2, 4, 2);
             tpFrom.Name = "tpFrom";
-            tpFrom.Size = new Size(157, 32);
+            tpFrom.Size = new Size(288, 57);
             tpFrom.TabIndex = 14;
             tpFrom.Value = new DateTime(2024, 7, 31, 0, 0, 0, 0);
             // 
@@ -795,19 +799,20 @@ namespace ELECTRONIC_SCARE
             panel20.Controls.Add(label6);
             panel20.Controls.Add(tpTo);
             panel20.Dock = DockStyle.Right;
-            panel20.Location = new Point(173, 0);
+            panel20.Location = new Point(321, 0);
+            panel20.Margin = new Padding(6);
             panel20.Name = "panel20";
-            panel20.Size = new Size(169, 67);
+            panel20.Size = new Size(314, 143);
             panel20.TabIndex = 2;
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Times New Roman", 13.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(46, 2);
-            label6.Margin = new Padding(2, 0, 2, 0);
+            label6.Location = new Point(85, 4);
+            label6.Margin = new Padding(4, 0, 4, 0);
             label6.Name = "label6";
-            label6.Size = new Size(36, 22);
+            label6.Size = new Size(67, 42);
             label6.TabIndex = 12;
             label6.Text = "To ";
             label6.TextAlign = ContentAlignment.MiddleCenter;
@@ -816,10 +821,10 @@ namespace ELECTRONIC_SCARE
             // 
             tpTo.Font = new Font("Times New Roman", 16.125F);
             tpTo.Format = DateTimePickerFormat.Short;
-            tpTo.Location = new Point(2, 29);
-            tpTo.Margin = new Padding(2, 1, 2, 1);
+            tpTo.Location = new Point(4, 62);
+            tpTo.Margin = new Padding(4, 2, 4, 2);
             tpTo.Name = "tpTo";
-            tpTo.Size = new Size(157, 32);
+            tpTo.Size = new Size(288, 57);
             tpTo.TabIndex = 15;
             // 
             // panel19
@@ -827,29 +832,30 @@ namespace ELECTRONIC_SCARE
             panel19.Controls.Add(cbPO);
             panel19.Controls.Add(label8);
             panel19.Dock = DockStyle.Right;
-            panel19.Location = new Point(342, 0);
+            panel19.Location = new Point(635, 0);
+            panel19.Margin = new Padding(6);
             panel19.Name = "panel19";
-            panel19.Size = new Size(351, 67);
+            panel19.Size = new Size(652, 143);
             panel19.TabIndex = 1;
             // 
             // cbPO
             // 
             cbPO.Font = new Font("Times New Roman", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cbPO.FormattingEnabled = true;
-            cbPO.Location = new Point(5, 29);
-            cbPO.Margin = new Padding(2, 1, 2, 1);
+            cbPO.Location = new Point(9, 62);
+            cbPO.Margin = new Padding(4, 2, 4, 2);
             cbPO.Name = "cbPO";
-            cbPO.Size = new Size(341, 30);
+            cbPO.Size = new Size(630, 54);
             cbPO.TabIndex = 16;
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Times New Roman", 13.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(179, 6);
-            label8.Margin = new Padding(2, 0, 2, 0);
+            label8.Location = new Point(332, 13);
+            label8.Margin = new Padding(4, 0, 4, 0);
             label8.Name = "label8";
-            label8.Size = new Size(37, 22);
+            label8.Size = new Size(70, 42);
             label8.TabIndex = 13;
             label8.Text = "PO";
             label8.TextAlign = ContentAlignment.MiddleCenter;
@@ -858,10 +864,11 @@ namespace ELECTRONIC_SCARE
             // 
             panel10.Controls.Add(btnSearch);
             panel10.Dock = DockStyle.Right;
-            panel10.Location = new Point(693, 0);
+            panel10.Location = new Point(1287, 0);
+            panel10.Margin = new Padding(6);
             panel10.Name = "panel10";
-            panel10.Padding = new Padding(5);
-            panel10.Size = new Size(169, 67);
+            panel10.Padding = new Padding(9, 11, 9, 11);
+            panel10.Size = new Size(314, 143);
             panel10.TabIndex = 0;
             // 
             // btnSearch
@@ -871,10 +878,10 @@ namespace ELECTRONIC_SCARE
             btnSearch.FlatStyle = FlatStyle.Popup;
             btnSearch.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnSearch.ForeColor = SystemColors.ActiveCaptionText;
-            btnSearch.Location = new Point(5, 5);
-            btnSearch.Margin = new Padding(2, 1, 2, 1);
+            btnSearch.Location = new Point(9, 11);
+            btnSearch.Margin = new Padding(4, 2, 4, 2);
             btnSearch.Name = "btnSearch";
-            btnSearch.Size = new Size(159, 57);
+            btnSearch.Size = new Size(296, 121);
             btnSearch.TabIndex = 13;
             btnSearch.Text = "SEARCH";
             btnSearch.UseVisualStyleBackColor = false;
@@ -893,15 +900,15 @@ namespace ELECTRONIC_SCARE
             // 
             // Main
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1744, 807);
+            ClientSize = new Size(2884, 1722);
             Controls.Add(panel3);
             Controls.Add(panel1);
             Controls.Add(panel18);
             Controls.Add(panel12);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(2, 1, 2, 1);
+            Margin = new Padding(4, 2, 4, 2);
             Name = "Main";
             Text = "Main";
             FormClosing += Main_FormClosing;
