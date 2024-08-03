@@ -1545,7 +1545,7 @@ namespace ELECTRONIC_SCARE
                     try
                     {
                         if (SerialPortArduino.IsOpen)
-                            SerialPortArduino.Write(Fals);
+                            SerialPortArduino.WriteLine(Fals);
                     }
                     catch (Exception)
                     {
@@ -1560,21 +1560,22 @@ namespace ELECTRONIC_SCARE
                     break;
                 case StateScale.CheckBlance:
                     OK = true;
+                    try
+                    {
+                        if (SerialPortArduino.IsOpen)
+                            SerialPortArduino.WriteLine(True);
+                    }
+                    catch (Exception ex)
+                    {
+
+                    }
                     if (numStable > 2)
                     {
                         numStable = 0; IsStable = false;
                         stateScale = StateScale.CheckZero;
                     }
                        
-                    try
-                    {
-                        if (SerialPortArduino.IsOpen)
-                            SerialPortArduino.Write(True);
-                    }
-                    catch (Exception ex)
-                    {
-
-                    }
+                    
                     break;
                 case StateScale.CheckZero:
                     if (numStable > 5)
