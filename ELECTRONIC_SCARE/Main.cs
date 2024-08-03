@@ -1542,16 +1542,17 @@ namespace ELECTRONIC_SCARE
             {
                 case StateScale.Putting:
                     tmChecking.Interval = 200;
-                    try
-                    {
-                        if (SerialPortArduino.IsOpen)
-                            SerialPortArduino.WriteLine(Fals);
-                    }
-                    catch (Exception)
-                    {
-                    }
+                   
                     if (numStable > 2)
                     {
+                        try
+                        {
+                            if (SerialPortArduino.IsOpen)
+                                SerialPortArduino.WriteLine(Fals);
+                        }
+                        catch (Exception)
+                        {
+                        }
                         numStable = 0; IsStable = false;
                         OK = false;
                        
@@ -1586,8 +1587,15 @@ namespace ELECTRONIC_SCARE
                         qtyibString = tbQtyib.Text.Trim();
                       await PrintLabelAsync();
                         EntryValue();
-                        
-                       
+                        try
+                        {
+                            if (SerialPortArduino.IsOpen)
+                                SerialPortArduino.WriteLine(Fals);
+                        }
+                        catch (Exception)
+                        {
+                        }
+
                     }
                        
                     break;
